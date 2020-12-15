@@ -39,8 +39,9 @@ parameters:
         - *.blade.php
     mixinExcludeClasses:
         - Eloquent
-    bootstrapFiles:
-        - bootstrap.php
+    # Disabled so this can be overridden downstream.
+    # bootstrapFiles:
+    #    - bootstrap.php
     checkGenericClassInNonGenericObjectType: false
     noUnnecessaryCollectionCall: true
     noUnnecessaryCollectionCallOnly: []
